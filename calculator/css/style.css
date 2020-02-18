@@ -1,0 +1,120 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.row{
+	max-width: 1180px;
+}
+.logo{
+	height: 120px;
+	width: auto;
+	margin-top: 0px;
+	/* float: left; */
+}
+
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('../images/nature.jpg');
+	height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0px;
+margin-top:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.title{
+	color: white;
+	text-align: center;
+	margin-bottom: 1px;
+	font-size: 50px;
+
+}
+/*calculator*/
+.disp{
+width: 570px;
+height: 80px;
+text-align: center;
+background-color: #1f80c9;	
+
+}
+.mycal{
+	float: left;
+}
+#calform{
+	/* margin-left: 225px; */
+	margin-top: 0px;
+	float: left;
+}
+h1{
+	text-align: center;
+	font-size: 80px;
+	margin-right: 150px;
+	margin-top: 7px;
+}
+input{
+	width: 130px;
+	height: 70px;
+	font-size: 60px;
+	border-radius: 10px;
+	margin: 5px;
+	background-color: #000;
+	color: #fff;
+	border-style: none;
+}
+.operator1{
+	background-color: #cc5c11;
+}
+.operator2{
+	background-color: #ba55d3;
+}
+.operator3{
+	background-color: #7db1b2;
+}
+.clear{
+	background-color: #cc0000;
+}
+.operator4{
+	background-color: green;
+}
+.operator5{
+	background-color:#27ACD9 ;
+}
+
+/*digital clock*/
+.clockpro{
+	color: #fff;
+	font-size: 145px;
+	
+	padding: 15px;
+	/* width: 100%; */
+	margin-left: 0px;
+	margin-right: 2px;
+	font-family: Helvetica;
+	text-align: center;
+	margin-top: 0px;
+	float: right;
+	/* height: 380px; */
+
+}
+.colorchange{
+	animation: colorchangesantosh 1s infinite;
+	text-decoration: underline;
+
+}
+@keyframes colorchangesantosh {
+    0%{color:greenyellow;}
+    25%{color:#bf55ec;}
+    50%{color:white;}
+    75%{color: yellow;}
+    100%{color: royalblue;}
+}
+.projectno{
+	color: chartreuse;
+	font-size: 50px;
+}
+.jr{
+	color: yellow
+}
+

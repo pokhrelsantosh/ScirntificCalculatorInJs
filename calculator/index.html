@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+.box1 {
+  float: left;
+  width: 40%;
+  padding: 5px;
+  margin-left: 3%;
+  margin-top: 0px;
+  
+ 
+}
+.box2 {
+  float: right;
+  width: 47%;
+  padding: 10px;
+  margin-right: 0px;
+
+}
+.box3{
+	float: left;
+  width: 10%;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0%;
+
+}
+.box4{
+	float: right;
+  width: 90%;
+  padding: 10px;
+  margin-right: 0px;
+  text-align: left;
+
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+<script type="text/javascript">
+function fnsin(){
+	cal.display.value = Math.sin(cal.display.value);
+}
+function fncos(){
+	cal.display.value = Math.cos(cal.display.value);
+}
+function fntan(){
+	cal.display.value = Math.tan(cal.display.value);
+}
+function square(){
+	cal.display.value = Math.pow(cal.display.value,2);
+}
+function squarert(){
+	cal.display.value = Math.pow(cal.display.value,1/2);
+}
+function backspace(){
+	var prevalue = cal.display.value;
+	cal.display.value = prevalue.substr(0,prevalue.length-1);
+}
+
+</script>
+</head>
+<body>
+
+
+
+		<div class="clearfix">
+				<div class="box3" >
+						<img src="images/about.png" alt="" srcset="" class="logo">
+
+					</div>
+					<div class="box4" >
+							<p class="title"><span class ="colorchange">CALCULATOR  VS  DIGITAL-CLOCK</span></p>
+
+					</div>
+					</div>
+	
+				
+			
+	
+	
+
+					
+
+
+
+
+<div class="clearfix">
+  <div class="box1" >
+        <form id="calform" name="cal">
+				<input type="" name="display" class="disp"><br>
+				<input type="button" name="btnsin" value="sin" onclick="fnsin()">
+				<input type="button" name="btncos" value="cos" onclick="fncos()">
+				<input type="button" name="btntan" value="tan" onclick="fntan()">
+				<input type="button" name="btnsquare" value="^2" onclick="square()">
+					<br>
+					<input type="button" name="btnsquarert" value="&#8730;"
+					" onclick="squarert()">
+					<input type="button" value="." name="" onClick="cal.display.value+='.'">
+					<input type="button" value="00" name="" onClick="cal.display.value+='00'">
+					<input type="button" name="btndel" value="DEL" onclick="backspace()"><br>
+				
+			
+				
+                <input type="button" value="0" onClick="cal.display.value+='0'">
+                <input type="button" value="1" name="" onClick="cal.display.value+='1'">
+                <input type="button" value="2" name=""onClick="cal.display.value+='2'">
+                <input type="button" value="+" name="" onClick="cal.display.value+='+'" class="operator1"><br>
+                <input type="button" value="3" name="" onClick="cal.display.value+='3'">
+                <input type="button" value="4" name="" onClick="cal.display.value+='4'">
+                <input type="button" value="5" name="" onClick="cal.display.value+='5'">
+                <input type="button" value="-" name="" onClick="cal.display.value+='-'" class="operator2"><br>
+                <input type="button" value="6" name="" onClick="cal.display.value+='6'">
+                <input type="button" value="7" name="" onClick="cal.display.value+='7'">
+                <input type="button" value="8" name="" onClick="cal.display.value+='8'">
+                <input type="button" value="x" name="" onClick="cal.display.value+='*'" class="operator3"><br>
+                <input type="button" value="9" name="" onClick="cal.display.value+='9'">
+                <input type="button" value="C" name="" onClick="cal.display.value=''" class="clear">
+                <input type="button" value="=" name="" onClick="cal.display.value=eval(cal.display.value)" class="operator4">
+                <input type="button" value="&#247;" name="" onClick="cal.display.value+='/'" class="operator5"><!-- division button -->
+            
+            </form>
+  </div>
+  <div class="box2" >
+        <div id="clock" class="clockpro" >
+                
+                <script type="text/javascript" src="app.js">
+                
+                    
+				</script>
+				<h1 style="color:mediumspringgreen;">DEVELOPER: Santosh Pokhrel</h1>
+                
+                
+                </div>
+			   <div class="projectno"><span class="jr">By Developer:</span><br> Santosh Pokhrel<br><br> PROJECT_NO: SIX </div> 
+			   
+
+                
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
